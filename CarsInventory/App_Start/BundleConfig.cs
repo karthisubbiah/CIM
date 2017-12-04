@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace CarsInventory
+namespace CarsInventoryApp
 {
     public class BundleConfig
     {
