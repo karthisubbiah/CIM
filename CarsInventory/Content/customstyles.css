@@ -1,0 +1,26 @@
+﻿/*Custom styles*/
+.formlable {
+    font-size: medium;
+    font-weight: bold;
+    font-size: 25px;
+}
+.labelheading {
+    padding-left:30%;
+    font-size:30px;
+}
+.gridheader {
+    font-size: medium;
+    font-weight: bold;
+    font-size: 20px;
+    text-align:left;
+}
+.griddata {
+    font-size: medium;
+    font-weight: bold;
+    font-size: 15px;
+}
+.logout {
+    font-size: medium;
+    font-size: 15px;
+    padding-left:35px;
+}
