@@ -1,0 +1,45 @@
+﻿@using CarsInventoryApp.Models;
+@model CarSearch
+@{
+    ViewBag.Title = "Car Inventory";
+}
+<br /><br /><br /><br />
+<label class="labelheading">Manage your car inventory</label>
+    @Html.ActionLink("Logout!", "Login", "Account", null, new { @class="logout"})
+@*@using (Html.BeginForm("Index", "Cars", FormMethod.Post,
+                                      new { enctype = "multipart/form-data" }))
+{*@
+@using (Ajax.BeginForm("SearchCars", "Cars", new AjaxOptions
+{
+    InsertionMode = InsertionMode.Replace,
+    UpdateTargetId = "tableDiv",//carsList
+    LoadingElementId = "loader" // div with .gif loader - that is shown when data are loading
+}, new {  }))
+{ 
+    <br /><br />
+<div class="form-group">
+    @Html.LabelFor(model => model.Brand, new { @class = "formlable" })
+    @Html.TextBoxFor(model => model.Brand, new { @class = "form-control" })
+  </div>
+  <div class="form-group">
+    @Html.LabelFor(model => model.Model, new { @class = "formlable" })
+    @Html.TextBoxFor(model => model.Model, new { @class = "form-control" })
+  </div>
+  <button type="submit" name="userAction" value="search" class="btn btn-primary btnwhite" onclick="return CI.SearchInventory.validateSearch();">Search</button>
+        <button type="submit" name="userAction" value="reset" class="btn btn-primary btn-danger" onclick="javascript: CI.SearchInventory.resetForm(this);">Reset</button>
+    @Html.ActionLink("Add New Car", "AddCar", "Cars", null, new { @class = "modal-link btn btn-success" })
+    <br /><br /><br />
+<div id="loader" class="alert" style="display:none">
+    Loading...
+</div>
+@Html.Partial("_CarsList")
+
+    
+<div id="modal-container" class="modal fade" tabindex="-1" role="dialog">
+</div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            CI.SearchInventory.onLoad();
+        });
+    </script>
+}

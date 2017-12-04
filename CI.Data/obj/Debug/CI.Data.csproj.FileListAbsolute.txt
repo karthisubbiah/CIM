@@ -1,0 +1,19 @@
+C:\Users\rmdev03\Documents\CarsInventoryApp\CI.Data\bin\Debug\CI.Data.dll.config
+C:\Users\rmdev03\Documents\CarsInventoryApp\CI.Data\bin\Debug\CI.Data.dll
+C:\Users\rmdev03\Documents\CarsInventoryApp\CI.Data\bin\Debug\CI.Data.pdb
+C:\Users\rmdev03\Documents\CarsInventoryApp\CI.Data\bin\Debug\EntityFramework.dll
+C:\Users\rmdev03\Documents\CarsInventoryApp\CI.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\rmdev03\Documents\CarsInventoryApp\CI.Data\bin\Debug\EntityFramework.xml
+C:\Users\rmdev03\Documents\CarsInventoryApp\CI.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\rmdev03\Documents\CarsInventoryApp\CI.Data\obj\Debug\CI.Data.dll
+C:\Users\rmdev03\Documents\CarsInventoryApp\CI.Data\obj\Debug\CI.Data.pdb
+C:\Users\rmdev03\Documents\CarsInventoryApp\CI.Data\obj\Debug\CI.Data.csprojResolveAssemblyReference.cache
+C:\Users\rmdev03\Documents\Visual Studio 2012\Projects\CarsInventory\CI.Data\bin\Debug\CI.Data.dll.config
+C:\Users\rmdev03\Documents\Visual Studio 2012\Projects\CarsInventory\CI.Data\bin\Debug\CI.Data.dll
+C:\Users\rmdev03\Documents\Visual Studio 2012\Projects\CarsInventory\CI.Data\bin\Debug\CI.Data.pdb
+C:\Users\rmdev03\Documents\Visual Studio 2012\Projects\CarsInventory\CI.Data\bin\Debug\EntityFramework.dll
+C:\Users\rmdev03\Documents\Visual Studio 2012\Projects\CarsInventory\CI.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\rmdev03\Documents\Visual Studio 2012\Projects\CarsInventory\CI.Data\bin\Debug\EntityFramework.xml
+C:\Users\rmdev03\Documents\Visual Studio 2012\Projects\CarsInventory\CI.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\rmdev03\Documents\Visual Studio 2012\Projects\CarsInventory\CI.Data\obj\Debug\CI.Data.dll
+C:\Users\rmdev03\Documents\Visual Studio 2012\Projects\CarsInventory\CI.Data\obj\Debug\CI.Data.pdb
