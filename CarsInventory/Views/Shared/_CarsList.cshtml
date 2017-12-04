@@ -1,0 +1,33 @@
+﻿@using System.Web.Helpers;
+@using CarsInventoryApp.Models;
+@model CarSearch
+@{
+    var grid = new WebGrid(Model.Cars, canPage: true, canSort: true, rowsPerPage: 5, ajaxUpdateContainerId: "tableDiv"); grid.Pager(WebGridPagerModes.NextPrevious);
+}
+@if (Model.Cars != null && Model.Cars.Count > 0)
+{ 
+<div id="tableDiv">
+    @grid.GetHtml(
+            tableStyle: "webGrid",
+                headerStyle: "header",
+                alternatingRowStyle: "alt",
+                selectedRowStyle: "select",
+        columns: grid.Columns(
+                                                        grid.Column("Brand", "Brand"),
+                                        grid.Column("Model", "Model"),
+                                grid.Column("Year", "Year"),
+                                    grid.Column("Price", "Price"),
+        grid.Column("Id", header: "", canSort: false,
+
+         format: @<text>
+    @Html.ActionLink("Edit Car", "EditCar", "Cars", new { id = item.Id }, new { @class = "modal-link btn btn-success" })
+           </text>
+        )
+))
+</div>
+}
+else
+{
+    <label class="formlable">No inventory found...</label> 
+}
+

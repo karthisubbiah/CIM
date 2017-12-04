@@ -1,0 +1,60 @@
+﻿@model CarsInventoryApp.Models.UserAccount
+@using (Html.BeginForm("RegisterUser", "Account", FormMethod.Post))
+{
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    ×
+                </button>
+                <h4 class="modal-title">Register User</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.Name)
+                        </div>
+                        <div class="editor-field">
+                            @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+                            @*@Html.ValidationMessageFor(model => model.Name)*@
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.Email)
+                        </div>
+                        <div class="editor-field">
+                            @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Email)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.Password)
+                        </div>
+                        <div class="editor-field">
+                            @Html.PasswordFor(x => x.Password, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Password)
+                        </div>
+                    </div>
+                    @*<div class="form-group">
+                        <div class="editor-label">
+                            @Html.LabelFor(model => model.ConfirmPassword)
+                        </div>
+                        <div class="editor-field">
+                            @Html.PasswordFor(x => x.ConfirmPassword, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.ConfirmPassword)
+                        </div>
+                    </div>*@
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" onclick="javascript: CI.modalPopup.removeValidation(this);">Cancel</button>
+                <button type="submit" id="approve-btn" class="btn btn-danger">Save</button>
+            </div>
+        </div>
+    </div>
+}
+    <script type="text/javascript">
+    </script>
